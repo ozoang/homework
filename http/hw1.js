@@ -59,8 +59,6 @@ app.put('/update', (req, res) => {
         if (email === userData[i].email || tel === userData[i].tel) {
             return res.status(400).send("Bad Request");
         }
-        console.log(i)
-        console.log(userData[i])
         if (idDelete == userData[i].id) {
             userData.splice(i, 1, {
                 firstname: fname,
