@@ -58,10 +58,9 @@ app.post('/create', (req, res) => {
     rank = req.body.rank;
     tel = req.body.tel;
     email = req.body.email;
-
     for (let i = 0; i < userData.length; i++) {
 
-        if (email === userData[i].email || tel === userData[i].tel) {
+        if (id === userData[i].id || email === userData[i].email || tel === userData[i].tel) {
             return res.status(400).send("Bad Request");
         }
     }
