@@ -4,31 +4,7 @@ const port = 3000;
 
 app.use(express.json());
 
-const userData = [{
-        firstname: "1",
-        lastname: "1",
-        id: "1",
-        rank: "1",
-        tel: "1",
-        email: "1"
-    },
-    {
-        firstname: "2",
-        lastname: "2",
-        id: "2",
-        rank: "2",
-        tel: "2",
-        email: "2"
-    },
-    {
-        firstname: "3",
-        lastname: "3",
-        id: "3",
-        rank: "3",
-        tel: "3",
-        email: "3"
-    }
-]
+const userData = []
 
 let fname;
 let lname;
