@@ -85,36 +85,6 @@ function encryptpass(pass) {
 
 };
 
-
-
-// const password = 'pass123';
-// var hashedPassword;
-
-// bcrypt.genSalt(10, function(err, Salt) {
-
-//     bcrypt.hash(password, Salt, function(err, hash) {
-//         if (err) {
-//             return console.log('cannot encrypt');
-//         }
-//         hashedPassword = hash;
-//         console.log(hash);
-
-//         bcrypt.compare(password, hashedPassword,
-//             async function(err, isMatch) {
-//                 if (isMatch) {
-//                     console.log('Encrypted password is ', password)
-//                     console.log('Decrypted password is ', hashedPassword)
-//                 }
-//                 if (!isMatch) {
-
-//                     console.log(hashedPassword + ' is not encrypttion of ' + password);
-//                 }
-
-//             }
-//         )
-//     });
-// });
-
 app.listen(port, () => {
     console.log(`Listening at http://localhost:${port}`);
 });
